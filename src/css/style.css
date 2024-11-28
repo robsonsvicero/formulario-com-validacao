@@ -1,0 +1,87 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    padding: 12px 50px;
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+}
+
+.chamada {
+    width: 50%;
+    color: #FFF;
+    margin-right: 60px;
+}
+
+.chamada h2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.chamada p {
+    font-size: 15px;
+}
+
+form {
+    width: 50%;
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.grupo-form {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    min-width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    min-width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #3CCC87;
+    border: 2px solid #3CCC87;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #3CCC87;
+    background-color: #fff;
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 8px;
+    margin-top: 5px;
+    display: none;
+}
+
+input.invalido, textarea.invalido {
+    border-color: red;
+}
+
+input.valido, textarea.valido {
+    border-color: green;
+}

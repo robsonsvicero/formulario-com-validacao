@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Quest - Formulário com validação</title>
+</head>
+
+<body>
+    <main>
+        <section class="chamada">
+            <h2 class="titulo-chamada">FICOU COM DÚVIDA?<br>NOS MANDE UMA MENSAGEM!</h2>
+            <p class="texto-chamada">caso tenha ficado com qualquer dúvida
+                <br>basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+            </p>
+        </section>
+
+        <form id="formulario-contato">
+            <div class="grupo-form">
+
+                <input type="text" name="nome-completo" id="nome-completo" placeholder="Nome completo *">
+                <span class="mensagem-erro"></span>
+            </div>
+
+            <div class="grupo-form">
+                <input type="email" name="email" id="email" placeholder="Email *">
+                <span class="mensagem-erro"></span>
+            </div>
+
+            <div class="grupo-form">
+                <input type="tel" name="telefone" id="phone" placeholder="Telefone *">
+                <span class="mensagem-erro"></span>
+            </div>
+
+            <div class="grupo-form">
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                <span class="mensagem-erro"></span>
+            </div>
+
+            <p>*campos obrigatórios</p>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+
+</body>
+
+</html>
